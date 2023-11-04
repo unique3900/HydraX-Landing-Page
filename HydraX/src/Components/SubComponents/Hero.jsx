@@ -1,11 +1,45 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+
+const motionVarience = {
+  initial: {
+    opacity: 0.6,
+    y:-500
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { delay: 0.2 },
+  },
+};
+
+const motionVarienceRight = {
+  initial: {
+    opacity: 0,
+    x: -400,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: { delay: 0.5 },
+  }
+
+}
+
+
 
 const Hero = () => {
   return (
     <div className="flex flex-col lg:flex-row lg:justify-around  items-center gap-5 mt-14 lg:mt-0 ">
       {/* Left */}
-      <div className="flex flex-col items-start w-[90%] lg:w-1/2">
+      <motion.div
+        variants={motionVarience}
+        initial={"initial"}
+        whileInView={"animate"}
+        viewport={{ once: false }}
+        className="flex flex-col items-start w-[90%] lg:w-1/2"
+      >
         <h2 className="text-[50px] lg:text-[4rem] text-white font-bold break-words">
           <span className="text-transparent bg-clip-text bg-gradient-to-tr from-[#C0B7E8] to-[#8176AF] ">
             Dive
@@ -46,20 +80,31 @@ const Hero = () => {
             />
           </svg>
         </div>
-      </div>
+      </motion.div>
       {/* Right */}
-      <div className="relative hidden lg:flex ">
+      <motion.div variants={motionVarienceRight} initial="initial" whileInView={"animate"} viewport={{once:false}} className="relative hidden lg:flex ">
         <img
           className="object-cover w-[23rem] h-[26rem]  lg:rounded-bl-[55%] lg:rounded-[4rem]"
           src="./assets/hero-vr-img.jfif"
           alt=""
         />
 
-        <img src="./assets/hydra-line-1.png" className="absolute -top-[45%] left-[10%] z-[-100]" alt="" />
-        <img src="./assets/hydra-line-2.png" className="absolute -top-[21%] right-0 z-[-100]" alt="" />
-        <img src="./assets/hydra-line-3.png" className="absolute top-[70%] -right-7  z-[-100] w-full " alt="" />
-
-      </div>
+        <img
+          src="./assets/hydra-line-1.png"
+          className="absolute -top-[45%] left-[10%] z-[-100]"
+          alt=""
+        />
+        <img
+          src="./assets/hydra-line-2.png"
+          className="absolute -top-[21%] right-0 z-[-100]"
+          alt=""
+        />
+        <img
+          src="./assets/hydra-line-3.png"
+          className="absolute top-[70%] -right-7  z-[-100] w-full "
+          alt=""
+        />
+      </motion.div>
     </div>
   );
 };
