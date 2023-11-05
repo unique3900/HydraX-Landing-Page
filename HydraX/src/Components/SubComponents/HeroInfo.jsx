@@ -1,4 +1,5 @@
 import React from "react";
+import {MdOutlineChevronLeft,MdOutlineChevronRight } from 'react-icons/md';
 const heroStyle = {
   " border-radius": "90px",
   "background": "radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%)",
@@ -6,12 +7,23 @@ const heroStyle = {
   "box-shadow": " 0px 4px 4px 0px rgba(192, 183, 232, 0.01)",
 };
 const HeroInfo = () => {
+  const slideLeft = () => {
+    const slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft - 360;
+  }
+  const slideRight = () => {
+    const slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft + 360;
+  }
   return (
     <div
-      className="mt-10 flex flex-col justify-center lg:flex-row items-center  lg:justify-around gap-2  px-3 py-10 rounded-xl w-[88%]"
+      id="slider"
+      className=" flex flex-row items-center justify-between overflow-x-auto whitespace-nowrap scrollbar-hide scroll-smooth  gap-28 lg:gap-2  px-3 py-10 rounded-xl"
       style={heroStyle}
     >
-      <div className="flex w-80 lg:flex-row justify-start items-center gap-5">
+      <MdOutlineChevronLeft size={40} className="flex lg:hidden cursor-pointer absolute top-[50%] left-1 text-black bg-white p-2 rounded-full border-2 border-white" onClick={slideLeft}/>
+
+      <div className="flex w-[100%] lg:w-80  lg:flex-row justify-start items-center gap-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="70"
@@ -32,7 +44,7 @@ const HeroInfo = () => {
         </div>
       </div>
 
-      <div className="flex w-80  lg:flex-row justify-start items-center gap-6">
+      <div className="flex w-[100%] lg:w-80  lg:flex-row justify-start items-center gap-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="59"
@@ -54,7 +66,7 @@ const HeroInfo = () => {
         </div>
       </div>
 
-      <div className="flex w-80 lg:flex-row justify-start items-center gap-5">
+      <div className="flex w-[100%] lg:w-80 lg:flex-row justify-start items-center gap-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="65"
@@ -76,6 +88,9 @@ const HeroInfo = () => {
           <p className="text-sm">Contact@HydraVTech.com</p>
         </div>
       </div>
+
+
+      <MdOutlineChevronRight size={40} className="flex lg:hidden cursor-pointer absolute top-[50%] right-1 text-black bg-white p-2 rounded-full border-2 border-white" onClick={slideRight}/>
     </div>
   );
 };

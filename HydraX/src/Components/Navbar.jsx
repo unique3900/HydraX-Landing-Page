@@ -104,7 +104,7 @@ export const MobileMenu = ({ navState, setNavState }) => {
         <Link to={"/"} className="font-medium duration-75 hover:scale-105 active:text-lg">
           Home{" "}
         </Link>
-        <Link to={"/"} className="font-medium duration-75 hover:scale-105 active:text-lg">
+        <Link to={"/contact"} className="font-medium duration-75 hover:scale-105 active:text-lg">
           Services{" "}
         </Link>
         <Link to={"/"} className="font-medium duration-75 hover:scale-105 active:text-lg">

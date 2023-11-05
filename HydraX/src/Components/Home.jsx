@@ -4,9 +4,12 @@ import HeroInfo from './SubComponents/HeroInfo'
 
 const Home = () => {
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div id='home' className=' flex flex-col justify-center items-center'>
       <Hero />
-      <HeroInfo/>
+ 
+
+
+      
     </div>
   )
 }
