@@ -6,7 +6,7 @@ import HeroInfo from "./HeroInfo";
 const motionVarience = {
   initial: {
     opacity: 0.3,
-    y: -520,
+    y: -100,
   },
   animate: {
     opacity: 1,
@@ -29,7 +29,7 @@ const motionVarienceRight = {
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center gap-10">
+    <div className=" flex flex-col items-center gap-10 ">
       <div className="flex flex-col lg:flex-row lg:justify-around  items-center gap-5 mt-14 lg:mt-0 ">
         {/* Left */}
         <motion.div

@@ -3,13 +3,26 @@
 @tailwind utilities;
 
 *{
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
-body{
+
+html,body{
+  width: 100%;
+  height: 100%;
   background-color: #302C42;
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+.progress-bar {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #ae8ce1;
+  transform-origin: 0%;
 }

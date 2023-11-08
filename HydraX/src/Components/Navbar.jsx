@@ -6,7 +6,7 @@ import { SlClose } from "react-icons/sl";
 const Navbar = () => {
   const [navState, setNavState] = useState(false);
   return (
-    <div className="relative">
+    <div className="relative z-[1000]">
       <div className="hidden lg:flex flex-row justify-between px-12 py-5 items-center">
         <div className="flex gap-2 items-center">
           <img

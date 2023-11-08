@@ -9,11 +9,11 @@ const heroStyle = {
 const HeroInfo = () => {
   const slideLeft = () => {
     const slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 360;
+    slider.scrollLeft = slider.scrollLeft - 370;
   }
   const slideRight = () => {
     const slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 360;
+    slider.scrollLeft = slider.scrollLeft + 370;
   }
   return (
     <div
@@ -21,9 +21,9 @@ const HeroInfo = () => {
       className=" flex flex-row items-center justify-between overflow-x-auto whitespace-nowrap scrollbar-hide scroll-smooth  gap-28 lg:gap-2  px-3 py-10 rounded-xl"
       style={heroStyle}
     >
-      <MdOutlineChevronLeft size={40} className="flex lg:hidden cursor-pointer absolute top-[50%] left-1 text-black bg-white p-2 rounded-full border-2 border-white" onClick={slideLeft}/>
+      <MdOutlineChevronLeft size={30} className="flex lg:hidden cursor-pointer absolute top-[40%] left-1 text-black bg-white p-2 rounded-full border-2 border-white" onClick={slideLeft}/>
 
-      <div className="flex w-[100%] lg:w-80  lg:flex-row justify-start items-center gap-5">
+      <div className="flex w-[100%] lg:w-80  lg:flex-row justify-center lg:justify-start items-center gap-5 place-items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="70"
@@ -44,7 +44,7 @@ const HeroInfo = () => {
         </div>
       </div>
 
-      <div className="flex w-[100%] lg:w-80  lg:flex-row justify-start items-center gap-5">
+      <div className="flex w-[100%] lg:w-80  lg:flex-row justify-center lg:justify-start items-center gap-5 place-items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="59"
@@ -66,7 +66,7 @@ const HeroInfo = () => {
         </div>
       </div>
 
-      <div className="flex w-[100%] lg:w-80 lg:flex-row justify-start items-center gap-5">
+      <div className="flex w-[100%] lg:w-80  lg:flex-row justify-center lg:justify-start items-center gap-5 place-items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="65"
@@ -90,7 +90,7 @@ const HeroInfo = () => {
       </div>
 
 
-      <MdOutlineChevronRight size={40} className="flex lg:hidden cursor-pointer absolute top-[50%] right-1 text-black bg-white p-2 rounded-full border-2 border-white" onClick={slideRight}/>
+      <MdOutlineChevronRight size={30} className="flex lg:hidden cursor-pointer absolute top-[40%] right-1 text-black bg-white p-2 rounded-full border-2 border-white" onClick={slideRight}/>
     </div>
   );
 };
