@@ -10,18 +10,20 @@ import Introduction from "./Components/SubComponents/Introduction";
 
 const App = () => {
   const { scrollYProgress } = useScroll();
-  
 
   return (
-    <div className="overflow-hidden">
-      <Navbar />
-      <motion.div className="progress-bar " style={{ scaleX: scrollYProgress }}/>
-      <Home />
-  
-      {/* <DemoPage/> */}
-    </div>
 
-    
+      <div className="overflow-x-hidden">
+        <Navbar />
+        <motion.div
+          className="progress-bar "
+          style={{ scaleX: scrollYProgress }}
+        />
+        <Home />
+
+        {/* <DemoPage/> */}
+      </div>
+
   );
 };
 

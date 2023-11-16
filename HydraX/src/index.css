@@ -26,3 +26,24 @@ html,body{
   background: #ae8ce1;
   transform-origin: 0%;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 40px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #685d5d; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
