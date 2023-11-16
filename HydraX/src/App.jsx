@@ -13,7 +13,7 @@ const App = () => {
   
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navbar />
       <motion.div className="progress-bar " style={{ scaleX: scrollYProgress }}/>
       <Home />

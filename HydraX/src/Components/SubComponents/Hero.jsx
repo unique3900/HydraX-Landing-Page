@@ -18,25 +18,25 @@ const motionVarience = {
 const motionVarienceRight = {
   initial: {
     opacity: 0,
-    x: -400,
+    x: -4,
   },
   animate: {
     opacity: 1,
-    x: 0,
+    x: 1,
     transition: { delay: 0.5 },
   },
 };
 
 const Hero = () => {
   return (
-    <div className=" flex flex-col items-center gap-10 ">
+    <div className=" flex  flex-col items-center gap-10 ">
       <div className="flex flex-col lg:flex-row lg:justify-around  items-center gap-5 mt-14 lg:mt-0 ">
         {/* Left */}
         <motion.div
           variants={motionVarience}
           initial={"initial"}
           whileInView={"animate"}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="flex flex-col items-start w-[90%] lg:w-1/2"
         >
           <h2 className="text-[50px] lg:text-[4rem] text-white font-bold break-words">
@@ -82,38 +82,39 @@ const Hero = () => {
         </motion.div>
         {/* Right */}
         <motion.div
-          variants={motionVarienceRight}
-          initial="initial"
-          whileInView={"animate"}
-          viewport={{ once: false }}
-          className="relative hidden lg:flex "
+              className="relative  hidden lg:flex "
         >
           <img
-            className="object-cover w-[23rem] h-[26rem]  lg:rounded-bl-[55%] lg:rounded-[4rem]"
+            className="object-cover w-[23rem] h-[26rem]  lg:rounded-bl-[55%] z-50 lg:rounded-[4rem]"
             src="./assets/hero-vr-img.jfif"
             alt=""
           />
 
           <img
             src="./assets/hydra-line-1.png"
-            className="absolute -top-[45%] left-[10%] z-[-100]"
+            className="absolute z-10 rotate-[5deg] top-[-55%] left-[20%]"
             alt=""
           />
           <img
             src="./assets/hydra-line-2.png"
-            className="absolute -top-[21%] right-0 z-[-100]"
+            className="absolute -top-[21%] right-0 z-10"
             alt=""
           />
           <img
             src="./assets/hydra-line-3.png"
-            className="absolute top-[70%] -right-7  z-[-100] w-full "
+            className="absolute w-full top-[30%] -right-7 z-10"
+            alt=""
+          />
+            <img
+            src="./assets/hydra-line-2.png"
+            className="absolute top-[-20%] rotate-[60deg] left-[-20px] z-10"
             alt=""
           />
         </motion.div>
       </div>
 
       {/* Hero Info */}
-      <div className="relative w-96 lg:w-[90%]">
+      <div className="relative w-96 z-50 lg:w-[90%]">
         <HeroInfo className=" mt-10"/>
       </div>
     </div>
