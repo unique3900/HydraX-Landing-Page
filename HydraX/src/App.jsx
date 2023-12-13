@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
@@ -9,7 +9,9 @@ import DemoPage from "./Components/SubComponents/DemoPage";
 import Introduction from "./Components/SubComponents/Introduction";
 
 const App = () => {
-  const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll()
+
+  
 
   return (
 

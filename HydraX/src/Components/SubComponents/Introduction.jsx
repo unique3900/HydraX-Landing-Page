@@ -43,7 +43,7 @@ const Introduction = () => {
             viewBox="0 0 158 4"
             fill="none"
           >
-            <path d="M157.5 2H0" stroke="#C0B7E8" stroke-width="3" />
+            <path d="M157.5 2H0" stroke="#C0B7E8" strokeWidth="3" />
           </svg>
           <svg
             className="-ml-10"
@@ -56,9 +56,9 @@ const Introduction = () => {
             <path
               d="M70.8333 50L29.1667 50M70.8333 50L54.1667 66.6666M70.8333 50L54.1667 33.3333"
               stroke="#C0B7E8"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>
@@ -92,8 +92,8 @@ const Introduction = () => {
           <path
             d="M-4.5 74.5C153.667 21.1667 504.6 -53.5 643 74.5C816 234.5 1071.5 258.5 1186.5 146C1278.5 56 1394.17 70.8333 1440.5 89.5"
             stroke="url(#paint0_linear_3_54)"
-            stroke-opacity="0.13"
-            stroke-width="6"
+            strokeOpacity="0.13"
+            strokeWidth="6"
           />
           <defs>
             <linearGradient
@@ -104,10 +104,10 @@ const Introduction = () => {
               y2="62.9999"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#343045" />
-              <stop offset="0.224242" stop-color="#C0B7E8" />
-              <stop offset="0.786458" stop-color="#8176AF" />
-              <stop offset="0.96875" stop-color="#343045" />
+              <stop stopColor="#343045" />
+              <stop offset="0.224242" stopColor="#C0B7E8" />
+              <stop offset="0.786458" stopColor="#8176AF" />
+              <stop offset="0.96875" stopColor="#343045" />
             </linearGradient>
           </defs>
         </svg>
@@ -159,7 +159,7 @@ const Introduction = () => {
             viewBox="0 0 158 4"
             fill="none"
           >
-            <path d="M157.5 2H0" stroke="#C0B7E8" stroke-width="3" />
+            <path d="M157.5 2H0" stroke="#C0B7E8" strokeWidth="3" />
           </svg>
           <svg
             className="-ml-10"
@@ -172,9 +172,9 @@ const Introduction = () => {
             <path
               d="M70.8333 50L29.1667 50M70.8333 50L54.1667 66.6666M70.8333 50L54.1667 33.3333"
               stroke="#C0B7E8"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>
